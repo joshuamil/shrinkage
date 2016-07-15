@@ -1,0 +1,24 @@
+{
+  "name": "shrinkage",
+  "version": "1.0.0",
+  "description": "Service to shrink images for the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shrink",
+    "image",
+    "sharp",
+    "service"
+  ],
+  "author": "Joshua Miller",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-busboy": "^3.0.0",
+    "pug": "^2.0.0-beta3",
+    "sharp": "^0.15.1"
+  }
+}

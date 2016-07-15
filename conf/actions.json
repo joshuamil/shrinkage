@@ -1,0 +1,39 @@
+{
+  "actions":[
+    {
+      "name": "default",
+      "description": "Compresses an image without altering the dimensions.",
+      "size": {},
+      "format": "png",
+      "level": 5
+    },
+    {
+      "name": "hero",
+      "description": "Resizes an image for placement in a hero.",
+      "size": {"w":640,"h":480},
+      "format": "png",
+      "level": 7
+    },
+    {
+      "name": "icon",
+      "description": "Resizes an image for use as an icon.",
+      "size": {"w":50,"h":50},
+      "format": "png",
+      "level": 7
+    },
+    {
+      "name": "avatar",
+      "description": "Resizes an image for use as an avatar.",
+      "size": {"w":80,"h":80},
+      "format": "png",
+      "level": 7
+    },
+    {
+      "name": "thumbnail",
+      "description": "Resizes an image for use as a thumbnail.",
+      "size": {"w":250,"h":100},
+      "format": "png",
+      "level": 7
+    }
+  ]
+}
