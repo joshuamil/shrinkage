@@ -11,9 +11,10 @@
     {
       "name": "hero",
       "description": "Resizes an image for placement in a hero.",
-      "size": {"w":640,"h":null},
+      "size": {"w":640,"h":480},
       "format": "png",
-      "level": 7
+      "level": 7,
+      "crop": true
     },
     {
       "name": "icon",
