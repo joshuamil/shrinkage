@@ -4,7 +4,7 @@ This service allows you to post an image and receive a compressed and/or modifie
 ---
 
 ## REST Signature
-Following is a list of POST parameters that the service accepts.
+Following is a list of parameters that the service accepts. Requests should be sent to <code>http://svc.apprad.us/shrink</code> using a POST request.
 
 <table class="table table-bordered">
   <tr>

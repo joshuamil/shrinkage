@@ -41,7 +41,7 @@ app.get('/', function (req, res) {
 
 
 // Route for handling post requests
-app.post('/svc', function (req, res){
+app.post('/shrink', function (req, res){
   methods.processRequest(req, res);
 });
 
