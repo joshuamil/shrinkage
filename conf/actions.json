@@ -5,7 +5,6 @@
       "description": "Compresses an image and converts to jpeg without altering the dimensions.",
       "size": {},
       "format": "jpeg",
-      "level": 4,
       "quality": 50
     },
     {

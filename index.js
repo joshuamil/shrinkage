@@ -1,6 +1,7 @@
 var express = require('express'),
     bb = require('express-busboy'),
-    pug = require('pug'),
+    marked = require('marked'),
+    fs = require('fs'),
     methods = require('./bin/methods.js'),
     config = require('./conf/conf.json').config;
 
@@ -20,9 +21,22 @@ var port = config.port || "8080";
 
 
 // Route for the front-end of the service
-app.get('/svc', function (req, res) {
-  var html = pug.renderFile('./html/welcome.html',{});
-  res.send(html);
+app.get('/', function (req, res) {
+
+  fs.readFile('./html/header.html','utf8',function(err,header){
+    fs.readFile('./html/footer.html','utf8',function(err,footer){
+      fs.readFile('./README.md', 'utf8', function (err,data) {
+        if (err) {
+          res.send("Cannot render README.md file.");
+        }
+        var html = header;
+            html += marked(data,{});
+            html += footer;
+        res.send(html);
+      });
+    });
+  });
+
 });
 
 
