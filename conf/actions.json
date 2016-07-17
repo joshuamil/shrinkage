@@ -2,15 +2,16 @@
   "actions":[
     {
       "name": "default",
-      "description": "Compresses an image without altering the dimensions.",
+      "description": "Compresses an image and converts to jpeg without altering the dimensions.",
       "size": {},
-      "format": "png",
-      "level": 5
+      "format": "jpeg",
+      "level": 4,
+      "quality": 50
     },
     {
       "name": "hero",
       "description": "Resizes an image for placement in a hero.",
-      "size": {"w":640,"h":480},
+      "size": {"w":640,"h":null},
       "format": "png",
       "level": 7
     },
@@ -19,21 +20,91 @@
       "description": "Resizes an image for use as an icon.",
       "size": {"w":50,"h":50},
       "format": "png",
-      "level": 7
+      "level": 7,
+      "crop": true
     },
     {
       "name": "avatar",
       "description": "Resizes an image for use as an avatar.",
       "size": {"w":80,"h":80},
       "format": "png",
-      "level": 7
+      "level": 7,
+      "crop": true
     },
     {
       "name": "thumbnail",
       "description": "Resizes an image for use as a thumbnail.",
       "size": {"w":250,"h":100},
       "format": "png",
-      "level": 7
+      "level": 7,
+      "crop": true
+    },
+    {
+      "name": "sample",
+      "description": "Samples a section from the image.",
+      "size": {"w":150,"h":150},
+      "format": "png",
+      "level": 4,
+      "crop": true,
+      "extract": {"top":300,"left":100}
+    },
+    {
+      "name": "invert",
+      "description": "Inverts the color profile of an image.",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "invert": true
+    },
+    {
+      "name": "rotate-90",
+      "description": "Rotates an image 90 deg. clockwise",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "rotate": 90
+    },
+    {
+      "name": "rotate-180",
+      "description": "Rotates an image 180 deg. clockwise",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "rotate": 180
+    },
+    {
+      "name": "rotate-270",
+      "description": "Rotates an image 270 deg. clockwise",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "rotate": 270
+    },
+    {
+      "name": "flip",
+      "description": "Mirrors an image vertically.",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "flip": true
+    },
+    {
+      "name": "flop",
+      "description": "Mirrors an image horizontally.",
+      "size": {},
+      "format": "png",
+      "level": 4,
+      "flop": true
+    },
+    {
+      "name": "kltpzyxm",
+      "description": "Sends you to the 5th dimension.",
+      "size": {"w":640,"h":null},
+      "format": "png",
+      "level": 5,
+      "invert": true,
+      "flip": true,
+      "flop": true
     }
   ]
 }
